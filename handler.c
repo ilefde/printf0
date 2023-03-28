@@ -40,15 +40,15 @@ int handler(const char *str, va_list list)
  *
  * Return: Size of the numbers of elements printed
  **/
-int percent_handler(const char *str, va_list list)
+int percent_handler(const char *str, va_list list, int *i)
 {
-	int size, j, number_formats, i = 0;
+	int size, j, number_formats;
 	format formats[] = {
 		{'s', print_string}, {'c', print_char},
 		{'d', print_integer}, {'i', print_integer}
 	};
 
-	i = i + 1;
+	*i = *i + 1;
 
 	if (str[i] == '\0')
 		return (-1);
