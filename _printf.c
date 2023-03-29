@@ -6,7 +6,7 @@
  * is composed of zero or more directives
  *
  * Return: The number of characters printed (excluding
- * the null byte used to end output to strings)
+ * the null byte used to end the output to strings)
  **/
 int _printf(const char *format, ...)
 {
