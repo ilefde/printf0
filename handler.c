@@ -7,6 +7,7 @@
  *
  * Return: Total size of arguments with the total size of the base string
  **/
+
 int handler(const char *str, va_list list)
 {
 	int size, i, aux;
@@ -40,6 +41,7 @@ int handler(const char *str, va_list list)
  *
  * Return: Size of the numbers of elements printed
  **/
+
 int percent_handler(const char *str, va_list list, int *i)
 {
 	int size, j, number_formats;
