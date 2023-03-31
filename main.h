@@ -1,10 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
 
+/* utils.c */
 int _strlen(const char *);
+int print(char *);
+char *itoa(long int, int);
+
 /* printf.c */
 int _printf(const char *, ...);
 
@@ -40,5 +45,6 @@ typedef struct _format
 	char type;
 	int (*f)(va_list);
 } format;
+
 
 #endif
